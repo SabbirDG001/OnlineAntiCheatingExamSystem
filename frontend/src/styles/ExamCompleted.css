@@ -1,0 +1,114 @@
+.exam-completed-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.completed-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 50px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.success-icon {
+  width: 100px;
+  height: 100px;
+  background: #4caf50;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em;
+  margin: 0 auto 30px;
+  animation: slideIn 0.6s ease;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.completed-card h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.completed-card p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.completed-card .secondary {
+  font-size: 0.95em;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.exam-info {
+  background: #f0f4ff;
+  border-left: 4px solid #667eea;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px 0;
+  text-align: left;
+}
+
+.exam-info p {
+  margin: 10px 0;
+  color: #333;
+  font-size: 1.05em;
+}
+
+.exam-info strong {
+  color: #667eea;
+}
+
+.completed-card button {
+  padding: 15px 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.05em;
+  transition: all 0.3s ease;
+}
+
+.completed-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 768px) {
+  .completed-card {
+    padding: 30px;
+  }
+
+  .completed-card h1 {
+    font-size: 1.5em;
+  }
+
+  .success-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 3em;
+  }
+}

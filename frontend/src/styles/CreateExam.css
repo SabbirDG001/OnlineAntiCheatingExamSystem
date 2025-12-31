@@ -1,0 +1,121 @@
+.create-exam-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-exam-form {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.create-exam-form h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.create-exam-form .form-group {
+  margin-bottom: 25px;
+}
+
+.create-exam-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.05em;
+}
+
+.create-exam-form input,
+.create-exam-form textarea,
+.create-exam-form select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.create-exam-form input:focus,
+.create-exam-form textarea:focus,
+.create-exam-form select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.create-exam-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.error {
+  color: #dc3545;
+  padding: 12px;
+  background: #f8d7da;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 0.95em;
+}
+
+.success {
+  color: #155724;
+  padding: 12px;
+  background: #d4edda;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 0.95em;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.form-actions button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-actions .btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.form-actions .btn-secondary {
+  background: #f0f0f0;
+  color: #333;
+  border: 2px solid #ddd;
+}
+
+.form-actions button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .create-exam-form {
+    padding: 25px;
+  }
+
+  .create-exam-form h1 {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,65 @@
+.student-auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  padding: 20px;
+}
+
+.student-auth-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.student-auth-box h1 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.student-auth-box .form-group {
+  margin-bottom: 20px;
+}
+
+.student-auth-box .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.student-auth-box .form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.student-auth-box .form-group input:focus {
+  outline: none;
+  border-color: #f5576c;
+}
+
+.student-auth-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+.student-auth-box .error {
+  color: #dc3545;
+  font-size: 0.9em;
+  padding: 10px;
+  background: #f8d7da;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}

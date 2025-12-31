@@ -1,0 +1,154 @@
+.teacher-dashboard {
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons .btn-primary {
+  background: white;
+  color: #667eea;
+}
+
+.nav-buttons .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-buttons .btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.nav-buttons .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.dashboard-content h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.exams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.exam-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.exam-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.exam-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.exam-card p {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+}
+
+.exam-card strong {
+  color: #667eea;
+}
+
+.exam-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.exam-actions button {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9em;
+}
+
+.exam-actions .btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.exam-actions .btn-info {
+  background: #17a2b8;
+  color: white;
+}
+
+.exam-actions button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-content > p {
+  text-align: center;
+  color: #666;
+  font-size: 1.1em;
+}
+
+.dashboard-content a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-copy{
+  margin-left: 10px;
+  padding: 5px 15px;
+  background-color: #fff;
+  color: rgb(72, 72, 72);
+  border: 1px solid rgb(72,72,72);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85em;
+}
